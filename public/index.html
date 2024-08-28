@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Terrenos en Fernández Oro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+    <!-- Header -->
+    <header class="bg-green-600 p-6" ">
+        <div class="container mx-auto sm:justify-center md:justify-between flex justify-center items-center">
+            <h1 class="text-white  font-bold hidden md:block md:justify-center  md:text-2xl">Terrenos en Fernández Oro</h1>
+            <nav class="md:text-center">
+                <ul class="flex space-x-4">
+                    <li><a href="#terrenos" class="text-white hover:text-gray-200 text-xl ">Terrenos</a></li>
+                    <li><a href="#ubicacion" class="text-white hover:text-gray-200 text-xl ">Ubicación</a></li>
+                    <li><a href="#contacto" class="text-white hover:text-gray-200 text-xl ">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-screen text-white flex items-center" style="background-image: url(./assets/contrato.png);">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl lg:text-5xl md:text-4xl sm:text-4xl font-bold max-sm:text-3xl">Vivi en la tranquilidad de Fernández Oro</h2>
+            <p class="mt-4  md:text-xl sm:text-md">Terrenos disponibles desde 300 m² con financiación accesible</p>
+            <a href="#contacto" class="mt-8 inline-block bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-full text-lg">Solicitá más información</a>
+        </div>
+    </section>
+
+    <!-- Terrenos Section -->
+    <section id="terrenos" class="py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold">Nuestros Terrenos</h2>
+            <p class="mt-4 text-gray-700">Terrenos de diferentes tamaños y ubicaciones para que elijas el que más te convenga.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="https://example.com/terreno1.jpg" alt="Terreno 1" class="w-full h-48 object-cover rounded-lg">
+                    <h3 class="text-2xl font-bold mt-4">Terreno 1</h3>
+                    <p class="mt-2 text-gray-700">300 m² - A pasos del río</p>
+                    <a href="#contacto" class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-full">Más información</a>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="https://example.com/terreno2.jpg" alt="Terreno 2" class="w-full h-48 object-cover rounded-lg">
+                    <h3 class="text-2xl font-bold mt-4">Terreno 2</h3>
+                    <p class="mt-2 text-gray-700">450 m² - Ideal para tu casa de campo</p>
+                    <a href="#contacto" class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-full">Más información</a>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="https://example.com/terreno3.jpg" alt="Terreno 3" class="w-full h-48 object-cover rounded-lg">
+                    <h3 class="text-2xl font-bold mt-4">Terreno 3</h3>
+                    <p class="mt-2 text-gray-700">600 m² - Con todos los servicios</p>
+                    <a href="#contacto" class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-full">Más información</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicación Section -->
+    <section id="ubicacion" class="py-12 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold">Ubicación</h2>
+            <p class="mt-4 text-gray-700">Fernández Oro, provincia de Neuquén. A minutos del centro y rodeado de naturaleza.</p>
+
+            <div class="mt-8">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.123456789!2d-68.123456!3d-38.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1234567890abcdef:0x1234567890abcdef!2sFernández%20Oro,%20Neuquén!5e0!3m2!1ses!2sar!4v1621234567890!5m2!1ses!2sar" 
+                    width="100%" 
+                    height="450" 
+                    frameborder="0" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    aria-hidden="false" 
+                    tabindex="0">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="py-12 bg-green-600 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold">Contacto</h2>
+            <p class="mt-4">Para más información sobre los terrenos, completá el formulario y nos pondremos en contacto.</p>
+
+            <form action="#" method="POST" class="mt-8 max-w-lg mx-auto">
+                <div class="mb-4">
+                    <input type="text" name="nombre" placeholder="Tu nombre" class="max-sm:w-80 w-full p-3 rounded-lg text-gray-900">
+                </div>
+                <div class="mb-4">
+                    <input type="email" name="email" placeholder="Tu email" class="max-sm:w-80 w-full p-3 rounded-lg text-gray-900">
+                </div>
+                <div class="mb-4">
+                    <textarea name="mensaje" rows="4" placeholder="Tu mensaje" class="max-sm:w-80 w-full p-3 rounded-lg text-gray-900"></textarea>
+                </div>
+                <button type="submit" class="bg-white text-green-600 py-3 px-6 rounded-full font-bold">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 p-6 text-white text-center">
+        <p>&copy; 2024 Terrenos en Fernández Oro. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
