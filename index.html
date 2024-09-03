@@ -5,28 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venta de Terrenos en Fernández Oro</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    .hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    animation: slide 21s infinite;
+}
+
+.hero-image:nth-child(1) {
+    background-image: url('./public/assets/contrato.png');
+}
+
+.hero-image:nth-child(2) {
+    background-image: url('./public/assets/arquitecto2.jpg');
+    animation-delay: 7s;
+}
+
+.hero-image:nth-child(3) {
+    background-image: url('./public/assets/familia3.jpg');
+    animation-delay: 14s;
+}
+
+@keyframes slide {
+    0%, 33.33% { opacity: 1; }
+    33.34%, 100% { opacity: 0; }
+}
+  
+    </style>
 </head>
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
 
     <!-- Header -->
-    <header class="bg-green-600 p-6" ">
+    <header class="bg-green-600 p-6">
         <div class="container mx-auto sm:justify-center md:justify-between flex justify-center items-center">
-            <h1 class="text-white  font-bold hidden md:block md:justify-center lg:text-3xl md:text-2xl">Terrenos en Fernández Oro</h1>
+            <h1 class="text-white font-bold hidden md:block md:justify-center lg:text-3xl md:text-2xl">Terrenos en Fernández Oro</h1>
             <nav class="md:text-center">
                 <ul class="flex space-x-7">
-                    <li><a href="#terrenos" class="text-white hover:text-gray-300 text-xl ">Terrenos</a></li>
-                    <li><a href="#ubicacion" class="text-white hover:text-gray-300 text-xl ">Ubicación</a></li>
-                    <li><a href="#contacto" class="text-white hover:text-gray-300 text-xl ">Contacto</a></li>
+                    <li><a href="#terrenos" class="text-white hover:text-gray-300 text-xl">Terrenos</a></li>
+                    <li><a href="#ubicacion" class="text-white hover:text-gray-300 text-xl">Ubicación</a></li>
+                    <li><a href="#contacto" class="text-white hover:text-gray-300 text-xl">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-cover bg-center h-screen text-white flex items-center" style="background-image: url(./public/assets/contrato.png);">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl lg:text-6xl md:text-4xl sm:text-4xl font-bold max-sm:text-4xl">Vivi en la tranquilidad de Fernández Oro</h2>
-            <p class="mt-2 text-gray-200 md:text-xl max-sm:text-lg">Terrenos disponibles desde 300 m² con financiación accesible</p>
+    <section class="hero flex justify-center items-center">
+        <div class="hero-image"></div>
+        <div class="hero-image"></div>
+        <div class="hero-image"></div>
+
+        <div class="container mx-auto text-center relative z-10">
+            <h2 class="text-4xl lg:text-7xl md:text-5xl sm:text-4xl font-bold max-sm:text-4xl text-white">Barrio "La Carlota"</h2>
+            <p class="mt-2 text-gray-200 md:text-xl max-sm:text-lg">Terrenos disponibles - Todos los servicios incluidos</p>
             <a href="#contacto" class="mt-8 inline-block bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-full text-lg max-sm:mt-20">Solicitá más información</a>
         </div>
     </section>
@@ -40,23 +84,23 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
                 <!-- Card 1 -->
                 <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <img src="https://example.com/terreno1.jpg" alt="Terreno 1" class="w-full h-48 object-cover rounded-lg">
+                    <img src="./public/assets/terreno.jpg" alt="Terreno 1" class="w-full h-48 object-cover rounded-lg">
                     <h3 class="text-2xl font-bold mt-4">Terreno 1</h3>
-                    <p class="mt-2 text-gray-700">300 m² - A pasos del río</p>
+                    <p class="mt-2 text-gray-700">252 m² - Con todos los servicios</p>
                     <a href="#contacto" class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-full">Más información</a>
                 </div>
                 <!-- Card 2 -->
                 <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <img src="https://example.com/terreno2.jpg" alt="Terreno 2" class="w-full h-48 object-cover rounded-lg">
+                    <img src="./public/assets/terreno.jpg" alt="Terreno 2" class="w-full h-48 object-cover rounded-lg">
                     <h3 class="text-2xl font-bold mt-4">Terreno 2</h3>
-                    <p class="mt-2 text-gray-700">450 m² - Ideal para tu casa de campo</p>
+                    <p class="mt-2 text-gray-700">364 m² - Con todos los servicios</p>
                     <a href="#contacto" class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-full">Más información</a>
                 </div>
                 <!-- Card 3 -->
                 <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <img src="https://example.com/terreno3.jpg" alt="Terreno 3" class="w-full h-48 object-cover rounded-lg">
+                    <img src="./public/assets/terreno.jpg" alt="Terreno 3" class="w-full h-48 object-cover rounded-lg">
                     <h3 class="text-2xl font-bold mt-4">Terreno 3</h3>
-                    <p class="mt-2 text-gray-700">600 m² - Con todos los servicios</p>
+                    <p class="mt-2 text-gray-700">421 m² - Con todos los servicios</p>
                     <a href="#contacto" class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-full">Más información</a>
                 </div>
             </div>
@@ -71,11 +115,11 @@
 
             <div class="mt-8">
                 <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.123456789!2d-68.123456!3d-38.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1234567890abcdef:0x1234567890abcdef!2sFernández%20Oro,%20Neuquén!5e0!3m2!1ses!2sar!4v1621234567890!5m2!1ses!2sar" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1949.0334697340563!2d-67.94125368166124!3d-38.94931411580369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a3ae8079e964f%3A0x2936fbff48bd7651!2sGral.%20Fernandez%20Oro%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses-419!2sar!4v1724988237193!5m2!1ses-419!2sar" 
                     width="100%" 
                     height="450" 
                     frameborder="0" 
-                    style="border:0;" 
+                    style="border:10px;" 
                     allowfullscreen="" 
                     aria-hidden="false" 
                     tabindex="0">
