@@ -17,9 +17,9 @@ $mensaje = $_POST["message"];
 
 
 // Datos de la cuenta de correo utilizada para enviar vía SMTP
-$smtpHost = "terrenos-fernandezoro.netlify.app";  // Dominio alternativo brindado en el email de alta 
-$smtpUsuario = "franciscovaccani08@gmail.com";  // Mi cuenta de correo
-$smtpClave = "franDorrego11";  // Mi contraseña
+$smtpHost = "smtp.mailgun.org";  // Dominio alternativo brindado en el email de alta 
+$smtpUsuario = "postmaster@sandbox767763f81548462ca38136af5cd19b67.mailgun.org";  // Mi cuenta de correo
+$smtpClave = "b373c06685214de2a7793683a7f72c53-2b755df8-a0741bfe";  // Mi contraseña
 
 // Email donde se enviaran los datos cargados en el formulario de contacto
 $emailDestino = "franciscovaccani08@gmail.com";
